@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Editable complaint letter templates — the free Everyday Letters Pack">
+<title>Templates — Complaints That Get Results</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="topnav"><a href="index.html" class="brand">Complaints That Get Results</a><div class="nav-links"><a href="index.html" class="nav-link">Start here</a>
+<a href="gather-records.html" class="nav-link">1 · Records</a>
+<a href="escalation-ladder.html" class="nav-link">2 · Ladder</a>
+<a href="letter-anatomy.html" class="nav-link">3 · Letters</a>
+<a href="deadlines.html" class="nav-link">4 · Deadlines</a>
+<a href="small-claims.html" class="nav-link">5 · Small claims</a>
+<a href="ai-tone-review.html" class="nav-link">6 · AI review</a>
+<a href="letters-pack.html" class="nav-link">7 · Letters pack</a>
+<a href="templates.html" class="nav-link active">Templates</a></div></nav>
+<main class="page"><header class="page-header">
+<p class="kicker">The free Everyday Letters Pack — five fill-in-the-blanks letters</p>
+<h1>Letter Templates</h1>
+<p class="lede">Editable right in this page, plus raw files in <code>site/templates-src/</code>.
+Fill every slot, delete what doesn't apply, then run the Chapter 6 redaction + tone review. Keep each letter to one page.</p>
+</header>
+<h2>How to use one</h2>
+<ol>
+<li>Pick the letter that matches your Chapter 2 escalation rung.</li>
+<li>Edit it below (or open the raw <code>.md</code> file), then save a copy in your dispute folder's <code>04-letters-sent/</code> folder.</li>
+<li>Redact personal details first, then run the AI tone review from <a href="ai-tone-review.html">Chapter 6</a>.</li>
+<li>Send it, log it in <code>00-log.md</code>, and set the two calendar reminders from <a href="deadlines.html">Chapter 4</a>.</li>
+</ol>
+<section class="template-card" id="letter-general-escalation">
+<h2>Template — General Escalation Letter (send to supervisor, corporate, or regulator)</h2>
+<div class="template-note"><blockquote>
+<p>The stair-step letter for Chapter 2's ladder. Fill every <code>{{slot}}</code>; attach
+your first letter and all case numbers. This is rung 2+ — shorter and firmer.</p>
+</blockquote></div>
+<textarea id="letter-general-escalation" name="letter-general-escalation" spellcheck="false" rows="30" aria-label="Editable Template — General Escalation Letter (send to supervisor, corporate, or regulator)">Date:           {{DAY-MONTH-YEAR}}
+To:             {{MANAGER / CORPORATE COMPLAINTS / REGULATOR OFFICE NAME}}
+From:           {{YOUR NAME}}, {{TOWN}}
+Subject:        Second request — reference #{{CASE #}} — reply requested by {{DATE +7 DAYS}}
+
+Dear {{NAME or Sir/Madam}},
+
+I'm following up on reference #{{CASE #}}, which I raised on {{DATE OF LETTER 1}} and have heard nothing about. This is my second letter, and I'm requesting it be reviewed at your level.
+
+Facts:
+1. On {{DATE OF PURCHASE / INCIDENT}}, I paid ${{AMOUNT}} for {{ITEM / SERVICE}}. Receipt attached.
+2. On {{DATE OF FIRST COMPLAINT}}, I wrote to your front-line team asking for {{ORIGINAL REMEDY: "a full refund"}} (copy attached, letter #1).
+3. To date ({{DD/MM/YYYY}}), the company's reply has been {{WHAT THEY ACTUALLY DID — "nothing" / "an automated reply" / "a letter denying the refund"}}.
+
+Everything I want you to review is in these three attachments. I want to keep this short and precise, so I'll stop describing and let the documents do the rest.
+
+REMEDY REQUEST: {{ONE REMEDY AND NUMBER — "a full refund of ${{AMOUNT}}"}}.
+
+Please reply by {{DATE +7 DAYS}}. If I don't hear from you by then, my next steps are (a) filing a formal complaint with {{NAMED REGULATOR/OMBUDSMAN}} and (b) assessing what remains available to me in small claims — in that order, and only because the earlier route ran out first.
+
+Attachments:
+1. Letter #1, dated {{DATE}}
+2. Receipt / proof of the deal
+3. Call log and reference #s
+
+Contact: {{EMAIL-OR-PHONE}}
+
+I appreciate that complaints come in on businesses every day and things slip. If you or your reviewer needs any further records from me, just write to me at the address above.
+
+{{YOUR NAME}}
+
+Send by both email and postal mail for anything high-stakes. Keep a printed copy of what you sent. Education, not legal advice — (c) 2026 Asdale Dynamics, LLC.</textarea>
+<div class="template-actions">
+<button class="btn" type="button" onclick="copyLetter('letter-general-escalation', this)">Copy</button>
+<button class="btn" type="button" onclick="downloadLetter('letter-general-escalation', 'letter-general-escalation.md')" download>Download .md</button>
+<span class="raw-link-code"><code>site/templates-src/letter-general-escalation.md</code></span>
+</div>
+</section><section class="template-card" id="letter-insurer-appeal">
+<h2>Template — Insurer: Denial Appeal (First Appeal Letter)</h2>
+<div class="template-note"><blockquote>
+<p>Fill every <code>{{slot}}</code>. Deadlines here are short — Chapter 4's calendar is
+mandatory for insurance disputes. Check your denial letter for the appeal
+window BEFORE you write.</p>
+</blockquote></div>
+<textarea id="letter-insurer-appeal" name="letter-insurer-appeal" spellcheck="false" rows="30" aria-label="Editable Template — Insurer: Denial Appeal (First Appeal Letter)">Date:           {{DAY-MONTH-YEAR}}
+To:             {{INSURER NAME}} — Appeals Department ({{ADDRESS-or-PORTAL}})
+From:           {{YOUR NAME}}, policy {{POLICY-####}}, claim {{CLAIM-####}}
+Subject:        Appeal of denial — claim {{CLAIM-####}} — reply requested by {{DATE +14 DAYS}}
+
+Dear Appeals Department,
+
+I'm appealing the denial of my claim {{CLAIM-####}} dated {{DENIAL DATE}}, and I'm asking that the claim be reviewed again in full.
+
+Facts:
+1. My policy with you covers {{WHAT WAS COVERED, IN YOUR OWN PHRASING FROM THE POLICY}}.
+2. The denial letter states the reason as {{EXACT WORDING FROM THE LETTER}}. I'd like to address that directly.
+3. Here is why I believe the claim fits the coverage: {{YOUR FACTS — the annual timeline, the professional's letter, the records — point by point, one line each.}}
+4. Please send copies of the policy provisions relied upon in the denial, as well as the applicable internal guidelines, so I can be sure I'm responding to the right version.
+
+Attached, in support:
+1. {{EVIDENCE ITEM}}
+2. {{EVIDENCE ITEM}}
+3. {{EVIDENCE ITEM}}
+
+REMEDY REQUEST: A full re-review of claim {{CLAIM-####}} under the coverage in my policy {{POLICY-####}}, and written confirmation of the decision either way.
+
+Could you also confirm, in your reply, the external review options that apply to my claim? I'd like to move straight to the appropriate next step if the internal review doesn't resolve it.
+
+Please reply by {{DATE +14 DAYS}}, and reference claim {{CLAIM-####}} in the subject line.
+
+Thank you — I'd rather sort this out with you than have to take the external route, and I appreciate a careful second look.
+
+{{YOUR NAME}}
+
+(Did you catch the note at number 4? Read every line before sending — and keep dates exact: appeal windows run from the date printed on the denial letter, not the day you first heard about it.) Keep the denial letter and this appeal as originally sent in `04-letters-sent/`. Education, not legal advice — (c) 2026 Asdale Dynamics, LLC.</textarea>
+<div class="template-actions">
+<button class="btn" type="button" onclick="copyLetter('letter-insurer-appeal', this)">Copy</button>
+<button class="btn" type="button" onclick="downloadLetter('letter-insurer-appeal', 'letter-insurer-appeal.md')" download>Download .md</button>
+<span class="raw-link-code"><code>site/templates-src/letter-insurer-appeal.md</code></span>
+</div>
+</section><section class="template-card" id="letter-landlord-repair">
+<h2>Template — Landlord: Written Repair Request</h2>
+<div class="template-note"><blockquote>
+<p>Fill every <code>{{slot}}</code>; send in writing (email or the portal), and log it in <code>00-log.md</code>.
+Keep tone firm and calm. This is rung 1 of Chapter 2 — a follow-up notice is rung 2.</p>
+</blockquote></div>
+<textarea id="letter-landlord-repair" name="letter-landlord-repair" spellcheck="false" rows="30" aria-label="Editable Template — Landlord: Written Repair Request">Date:           {{DAY-MONTH-YEAR}}
+To:             {{PROPERTY MANAGER / LANDLORD NAME}}
+From:           {{YOUR NAME}}, unit {{UNIT #}}, {{BUILDING ADDRESS}}
+Subject:        Repair request — {{ISSUE IN FOUR WORDS}} — unit {{UNIT #}}
+
+Dear {{NAME}},
+
+I'm writing to ask for a repair in unit {{UNIT #}}: {{THE PROBLEM, IN ONE PLAIN SENTENCE — "the boiler is not producing hot water."}}
+
+Facts:
+1. I first noticed the problem on {{DATE YOU FIRST SAW IT}}. See attached photos 1–3.
+2. I raised it verbally with {{WHO YOU TOLD, IF ANYONE}} on {{DATE}}.
+3. Nothing has changed as of today, {{DAY-MONTH-YEAR}}, and this affects {{WHAT'S AFFECTED: hot water / heating / a working door / a habitable room}}.
+
+REMEDY REQUEST: Please arrange for the repair within {{REASONABLE-WINDOW — 7 DAYS FOR MOST / 48 HOURS IF SAFETY-RELATED}}, and let me know when a technician is coming.
+
+Photos (attached as 1–{{N}}) show the problem. If any engineer visit needs help getting in, I'm flexible {{WHEN YOU'RE FREE}}.
+
+You can reach me at {{PHONE-OR-EMAIL}}. I'm not making a complaint — I'm sure this has just slipped through the net, and I'm sure it'll get sorted quickly.
+
+Thank you — I appreciate a repair you can book soon, and let me know if you'd like any more photos.
+
+{{YOUR NAME}}
+
+Keep the original of this letter in your dispute folder after sending. Adapted from Chapter 2 of *Complaints That Get Results*, (c) 2026 Asdale Dynamics, LLC. Education, not legal advice.</textarea>
+<div class="template-actions">
+<button class="btn" type="button" onclick="copyLetter('letter-landlord-repair', this)">Copy</button>
+<button class="btn" type="button" onclick="downloadLetter('letter-landlord-repair', 'letter-landlord-repair.md')" download>Download .md</button>
+<span class="raw-link-code"><code>site/templates-src/letter-landlord-repair.md</code></span>
+</div>
+</section><section class="template-card" id="letter-store-defect">
+<h2>Template — Store: Defective Product Refund Request</h2>
+<div class="template-note"><blockquote>
+<p>Fill in every <code>{{slot}}</code>, delete anything that doesn't apply, keep it to one page.
+Then run the Chapter 6 redaction + AI tone review before sending.</p>
+</blockquote></div>
+<textarea id="letter-store-defect" name="letter-store-defect" spellcheck="false" rows="30" aria-label="Editable Template — Store: Defective Product Refund Request">Date:           {{DAY-MONTH-YEAR}}
+To:             {{COMPANY NAME}} — Customer Service / {{PERSON-if-known}}
+From:           {{YOUR NAME}}, {{TOWN}}
+Subject:        Refund request — order {{ORDER #}} — reply requested by {{DATE +1 4-DAYS}}
+
+Dear {{NAME or Sir/Madam}},
+
+On {{DATE OF PURCHASE}}, I paid ${{AMOUNT}} for a product I've always been glad to use — a {{ITEM NAME}} — bought at {{STORE / URL}}. It broke down on {{DATE OF ISSUE}}, and I'm asking for your help putting it right.
+
+Facts:
+1. The product developed {{AN SPECIFIC FAULT: "the motor housing cracked / the unit stopped heating"}} about {{DAYS OF USE}} into normal use. See attached photo 1 and photo 2.
+2. I contacted your support team on {{DATE OF CONTACT}} and was given reference #{{CASE #}} and told I would hear back within {{TIMEFRAME PROMISED}}. No reply came.
+3. When I visited the store on {{DATE OF TRIP}}, the staff were polite but declined a refund, leaving me without a working product.
+
+The standard I'm relying on: the returns policy in force when I purchased (attached) covers {{THE EXACT PHRASE FROM THE POLICY — "30-day refunds on defective goods"}}. What I'm experiencing is what that policy exists for.
+
+REMEDY REQUEST: A full refund of ${{AMOUNT}} to my original payment method.
+
+Please reply by {{DATE +14 DAYS}} (this letter is dated {{DAY-MONTH-YEAR}}). If I don't hear from you by then, I'll take my next step and file a consumer complaint — though I'd far prefer to resolve this directly with you.
+
+Attachments:
+1. Receipt (order {{ORDER #}})
+2. Photos 1 and 2, showing the fault
+3. Notes of my support calls, with the ref number above
+
+Contact: {{EMAIL-OR-PHONE}}
+
+Thank you — I've been a customer for {{YEARS OF PATRONAGE}} and this is the first time I've needed to write in. I'd like to keep it that way.
+
+{{YOUR NAME}}
+
+Adapted from Chapter 3 of *Complaints That Get Results*, (c) 2026 Asdale Dynamics, LLC. Education, not legal advice — fill from your own records; never from memory of someone else's letter.</textarea>
+<div class="template-actions">
+<button class="btn" type="button" onclick="copyLetter('letter-store-defect', this)">Copy</button>
+<button class="btn" type="button" onclick="downloadLetter('letter-store-defect', 'letter-store-defect.md')" download>Download .md</button>
+<span class="raw-link-code"><code>site/templates-src/letter-store-defect.md</code></span>
+</div>
+</section><section class="template-card" id="letter-utility-billing">
+<h2>Template — Utility: Billing Dispute / Meter Review Request</h2>
+<div class="template-note"><blockquote>
+<p>Fill every <code>{{slot}}</code>. Refer strongly to the utility's own dispute process and
+case numbers — Chapter 2, utilities ladder.</p>
+</blockquote></div>
+<textarea id="letter-utility-billing" name="letter-utility-billing" spellcheck="false" rows="30" aria-label="Editable Template — Utility: Billing Dispute / Meter Review Request">Date:           {{DAY-MONTH-YEAR}}
+To:             {{UTILITY NAME}} — Billing Disputes ({{PORTAL-or-ADDRESS}})
+From:           {{YOUR NAME}}, account {{ACCT-####}}, {{SERVICE ADDRESS}}
+Subject:        Billing dispute — account {{ACCT-####}} — bill {{INVOICE REF}}
+
+Dear Billing Disputes Team,
+
+I'm disputing the amount billed for my {{ELECTRIC / WATER / GAS / INTERNET}} service for the period {{BILLING PERIOD}}, and asking for a review.
+
+Facts:
+1. The bill dated {{BILL DATE}} charged ${{AMOUNT}}, roughly {{COMPARISON: "10× the amount of my previous bill / usage in June"}}.
+2. The reading used was {{ESTIMATED OR ACTUAL, from the bill}}, and my usage history (attached) shows consumption of {{TYPICAL PREVIOUS FIGURE}} in comparable periods.
+3. This billing is more than double anything this account has ever produced, and no one I've contacted has explained it.
+
+REMEDY REQUEST: Please review the reading on bill {{INVOICE REF}} — including an updated meter read if needed — and issue a corrected invoice.
+
+I've attached my usage history and the two bills. My payment history on this account is unchanged and up to date, and I'd like to get back to that.
+
+Please reply by {{DATE +14 DAYS}}, ideally with the case/reference number for this dispute so I can follow up properly. If I don't hear from you, I'll take the next step and raise this with the {{LOCAL UTILITY REGULATOR, BY NAME IF YOU KNOW IT}}.
+
+Contact: {{EMAIL-OR-PHONE}}
+
+Thank you — I appreciate you looking into this.
+
+{{YOUR NAME}}
+
+If service shutoff is threatened, send this letter immediately and add one line underneath the REMEDY REQUEST: "Because this bill is genuinely in dispute, please place a shutoff hold on this account while the review completes." Education, not legal advice — (c) 2026 Asdale Dynamics, LLC.</textarea>
+<div class="template-actions">
+<button class="btn" type="button" onclick="copyLetter('letter-utility-billing', this)">Copy</button>
+<button class="btn" type="button" onclick="downloadLetter('letter-utility-billing', 'letter-utility-billing.md')" download>Download .md</button>
+<span class="raw-link-code"><code>site/templates-src/letter-utility-billing.md</code></span>
+</div>
+</section>
+<script>
+function copyLetter(id, btn) {
+  var box = document.getElementById(id);
+  navigator.clipboard.writeText(box.value).then(function () {
+    btn.textContent = 'Copied!';
+    setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+  });
+}
+function downloadLetter(id, name) {
+  var text = document.getElementById(id).value;
+  var blob = new Blob([text], { type: 'text/markdown' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>Complaints That Get Results</strong> — a plain-English dispute manual.</p>
+    <p>Education, not legal advice. Results depend on your own records, your chosen jurisdiction and its published rules.</p>
+    <p>© 2026 Asdale Dynamics, LLC · <a href="LICENSE">MIT License</a> · paired with the free <a href="templates.html">Everyday Letters Pack</a></p>
+  </div>
+</footer>
+</body>
+</html>

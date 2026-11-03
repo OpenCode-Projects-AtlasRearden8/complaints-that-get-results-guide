@@ -1,0 +1,203 @@
+/* Complaints That Get Results — site stylesheet
+   © 2026 Asdale Dynamics, LLC — MIT licensed. */
+
+:root {
+  --ink: #1d2b36;
+  --muted: #5b6b78;
+  --paper: #fdfcf8;
+  --card: #ffffff;
+  --brand: #1c6b5c;
+  --brand-soft: #e4f0ed;
+  --accent: #b35900;
+  --line: #e3e0d7;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+
+/* Navigation */
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--brand);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-right: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+}
+
+.nav-link {
+  color: #d5e8e3;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 6px;
+}
+
+.nav-link:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
+.nav-link.active { background: rgba(255, 255, 255, 0.22); color: #fff; }
+
+/* Page column */
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3.5rem;
+}
+
+.page-header {
+  border-bottom: 3px solid var(--brand);
+  padding-bottom: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 0.4rem;
+}
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0.1rem 0; color: var(--ink); }
+h2 { font-size: 1.35rem; margin-top: 2.2rem; color: var(--brand); }
+h3 { font-size: 1.08rem; margin-top: 1.6rem; }
+
+.page-header h1 { font-size: 2.1rem; }
+
+.lede { font-size: 1.06rem; color: var(--muted); max-width: 40rem; }
+
+a { color: var(--brand); }
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.8rem 1.1rem;
+  background: var(--brand-soft);
+  border-left: 4px solid var(--brand);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+blockquote p { margin: 0.2rem 0; }
+
+code, pre {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.85em;
+  background: #f2efe8;
+  border-radius: 6px;
+}
+code { padding: 0.1rem 0.35rem; }
+pre { padding: 0.9rem 1rem; overflow-x: auto; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.25rem 0;
+  font-size: 0.93rem;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--brand-soft); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+
+ul li, ol li { margin-bottom: 0.35rem; }
+
+hr { border: none; border-top: 1px solid var(--line); margin: 2.25rem 0; }
+
+/* Templates page */
+.template-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1.75rem 0;
+  box-shadow: 0 1px 3px rgba(29, 43, 54, 0.06);
+}
+
+.template-card h2 { margin-top: 0; }
+
+.template-card textarea {
+  width: 100%;
+  min-height: 22rem;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink);
+  background: #fbfaf6;
+  resize: vertical;
+}
+
+.template-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.btn {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--brand);
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover { background: #15544a; border-color: #15544a; }
+
+.raw-link-code { color: var(--muted); font-size: 0.8rem; }
+.raw-link-code code { background: none; padding: 0; }
+
+.template-note { color: var(--muted); font-size: 0.92rem; }
+.template-note p { margin: 0.4rem 0; }
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  border-top: 1px solid var(--line);
+  background: var(--card);
+  padding: 1.5rem 1.25rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.footer-inner { max-width: 46rem; margin: 0 auto; }
+.footer-inner p { margin: 0.3rem 0; }
+
+@media (max-width: 640px) {
+  .page { padding: 1.5rem 0.9rem 2.5rem; }
+  h1 { font-size: 1.6rem; }
+  th, td { padding: 0.4rem 0.45rem; }
+}

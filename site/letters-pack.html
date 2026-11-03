@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Chapter 7 — The Free Everyday Letters Pack — the plain-English dispute manual">
+<title>Chapter 7 — The Free Everyday Letters Pack — Complaints That Get Results</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="topnav"><a href="index.html" class="brand">Complaints That Get Results</a><div class="nav-links"><a href="index.html" class="nav-link">Start here</a>
+<a href="gather-records.html" class="nav-link">1 · Records</a>
+<a href="escalation-ladder.html" class="nav-link">2 · Ladder</a>
+<a href="letter-anatomy.html" class="nav-link">3 · Letters</a>
+<a href="deadlines.html" class="nav-link">4 · Deadlines</a>
+<a href="small-claims.html" class="nav-link">5 · Small claims</a>
+<a href="ai-tone-review.html" class="nav-link">6 · AI review</a>
+<a href="letters-pack.html" class="nav-link active">7 · Letters pack</a>
+<a href="templates.html" class="nav-link">Templates</a></div></nav>
+<main class="page"><h1 id="chapter-7-the-free-everyday-letters-pack">Chapter 7 — The Free Everyday Letters Pack</h1>
+<blockquote>
+<p>One sentence to remember: <strong>Never start a letter from a blank page — start from a fill-in-the-blanks.</strong></p>
+</blockquote>
+<hr>
+<h2 id="what-the-pack-is">What the pack is</h2>
+<p>This manual pairs with a <strong>free companion: the Everyday Letters Pack</strong> — a set of ready-made, fill-in-the-blanks letter templates covering the disputes people actually have. Where this manual teaches <em>why</em> each sentence works, the pack gives you <em>the sentences</em>:</p>
+<ul>
+<li>Store: defective product refund/exchange request</li>
+<li>Store: wrong or missing order / delivery issue</li>
+<li>Landlord: written repair request + follow-up notice</li>
+<li>Utility: billing dispute / high-bill request for meter review</li>
+<li>Insurer: denial appeal (first appeal letter)</li>
+<li>Generic: negative replies, deadline reminders, and the "escalation notice" stair-step letters</li>
+<li>Small-claims: the pre-filing final-demand letter that often settles the case outright</li>
+</ul>
+<p>Every template ships as <strong>plain text and Markdown</strong>, so it works in Notepad, Google Docs, Word, or a phone — no special software, no account.</p>
+<h2 id="where-to-get-it">Where to get it</h2>
+<p>The templates are also included in this project's <code>site/templates/</code> folder (see below), and a standalone copy of the pack is published by Asdale Dynamics, LLC — search for <strong>"free-everyday-letters-pack"</strong> on your code-hosting site of choice, or visit the hub at <a href="https://dylanasdale.github.io">dylanasdale.github.io</a>.</p>
+<p>Locally in this repo, the editable versions live in:</p>
+<pre><code>site/templates/
+├── letter-store-defect.md / .html
+├── letter-landlord-repair.md / .html
+├── letter-utility-billing.md / .html
+├── letter-insurer-appeal.md / .html
+└── letter-general-escalation.md / .html
+</code></pre>
+<p>The <code>.md</code> versions are the ones you'll usually copy. The <code>.html</code> versions are the same letters wrapped so the site can show them — edit either; the structure matches.</p>
+<h2 id="how-a-template-is-built-the-anatomy-hidden-in-the-blanks">How a template is built (the anatomy, hidden in the blanks)</h2>
+<p>The book's Chapter 3 anatomy maps onto every template:</p>
+<table>
+<thead>
+<tr>
+<th>Anatomy piece</th>
+<th>In the template</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Headline/date/ref</td>
+<td>The <code>To / From / Re:</code> block with <code>{{REF}}</code> slots</td>
+</tr>
+<tr>
+<td>One-sentence summary</td>
+<td>The "On <code>&lt;date&gt;</code>, I <code>&lt;did what&gt;</code>…" first line</td>
+</tr>
+<tr>
+<td>Facts</td>
+<td>Numbered <code>FACT 1..3</code> slots with photo/attachment references</td>
+</tr>
+<tr>
+<td>The ask</td>
+<td><code>REMEDY REQUEST:</code> — exactly one sentence</td>
+</tr>
+<tr>
+<td>The deadline</td>
+<td><code>Please reply by {{DATE}}</code> — pre-formatted as +14 days</td>
+</tr>
+<tr>
+<td>The next step</td>
+<td>The calm escalation line, already worded</td>
+</tr>
+<tr>
+<td>Closing</td>
+<td>A warm one-liner, plus your contact block</td>
+</tr>
+</tbody>
+</table>
+<p>Fill in the <code>{{slug}}</code> slots; delete any brackets that DON'T apply. Then run the Chapter 6 AI tone review on your cleaned copy.</p>
+<h2 id="the-5-minute-workflow">The 5-minute workflow</h2>
+<ol>
+<li><strong>Pick the template</strong> that matches your ladder rung (Chapter 2 told you which).</li>
+<li><strong>Copy it</strong> into <code>04-letters-sent/</code> as <code>letter-03-corporate-2026-03-04.md</code>.</li>
+<li><strong>Fill the slots,</strong> keeping the letter to one page.</li>
+<li><strong>Redact + tone review</strong> (Chapter 6).</li>
+<li><strong>Send</strong> (email + printed copy for anything high-stakes), <strong>log it</strong> in <code>00-log.md</code>, <strong>set the two calendar touches</strong> (Chapter 4).</li>
+</ol>
+<h2 id="why-templates-work-better-than-writing-from-scratch">Why templates work better than "writing from scratch"</h2>
+<ul>
+<li>You can't forget the deadline if the deadline is already in the template.</li>
+<li>You can't let the angry paragraph grow if there's no slot for it.</li>
+<li>They <em>should be</em> edited — strike anything that doesn't fit, and your edit is always faster than composing.</li>
+</ul>
+<h2 id="practice-once-before-you-need-it">Practice once before you need it</h2>
+<p>Fill one template for a problem you've already resolved (that time the streaming service charged twice, maybe). You'll learn the slots in five minutes, and when a real dispute shows up, you'll reach for the folder instead of the worry spiral. That's the whole point of this manual.</p>
+<hr>
+<p><em>Previous: <a href="ai-tone-review.html">Chapter 6 — AI Tone Review</a> · Back to <a href="index.html">Start Here</a></em></p></main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>Complaints That Get Results</strong> — a plain-English dispute manual.</p>
+    <p>Education, not legal advice. Results depend on your own records, your chosen jurisdiction and its published rules.</p>
+    <p>© 2026 Asdale Dynamics, LLC · <a href="LICENSE">MIT License</a> · paired with the free <a href="templates.html">Everyday Letters Pack</a></p>
+  </div>
+</footer>
+</body>
+</html>
